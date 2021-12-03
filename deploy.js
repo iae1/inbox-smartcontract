@@ -4,8 +4,8 @@ const Web3 = require('web3')
 const { interface, bytecode } = require('./compile')
 
 const provider = new HDWalletProvider(
-  'police moral frost seven include cage flat critic inspire voyage today million',
-  'https://rinkeby.infura.io/v3/28b664931c944fe4967ab049d9db5dd0'
+  process.env.INFURA_MNEMONIC,
+  process.env.INFURA_ADDRESS
 )
 
 const web3 = new Web3(provider)
